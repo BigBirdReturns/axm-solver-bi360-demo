@@ -57,6 +57,7 @@ hits = store.search(query, k=top_k)
 
 if not hits or hits[0].score < refusal_threshold:
     st.warning("I cannot answer from this local library.")
+    st.caption("Add the relevant document to the knowledge pack and recompile to enable this answer.")
     st.stop()
 
 st.subheader("Results")

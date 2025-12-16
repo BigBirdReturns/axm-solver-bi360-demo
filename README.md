@@ -36,6 +36,18 @@ docker run --rm -p 8501:8501 solver-bi360-axm-demo
 - How do I lock a period after month-end close?
 - What's the recommended month-end close sequence?
 
+### Demonstrating safe refusal
+
+Try asking a question that is organization-specific and not documented in this local pack, such as:
+
+- **What is our controller's approval threshold?**
+
+The demo will respond:
+
+> I cannot answer from this local library.
+
+This is intentional. It shows that the system refuses to guess when the knowledge has not been explicitly compiled. To enable the answer, add the relevant policy document to the knowledge pack and recompile.
+
 ## Repo contents
 
 - `knowledge/sources/solver-finance-mini/` synthetic Solver BI360 knowledge notes
